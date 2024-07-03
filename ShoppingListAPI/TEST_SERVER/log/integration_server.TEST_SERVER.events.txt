@@ -1,0 +1,17 @@
+2024-07-03 07:52:55.348280Z: [Thread 59376] (Msg 1/1) BIP1990I: Integration server 'TEST_SERVER' starting initialization; version '12.0.12.3' (64-bit) 
+2024-07-03 07:52:55.362664Z: [Thread 59376] (Msg 1/1) BIP9905I: Initializing resource managers. 
+2024-07-03 07:52:56.013560Z: [Thread 59376] (Msg 1/1) BIP10112I: The resources from 'imbopentelemetry.lil' have not been loaded because the runtime component 'OpenTelemetry' has not been enabled. Reason: 'Integration Server Configuration'. Further detail: 'server.conf.yaml'. 
+2024-07-03 07:52:56.060568Z: [Thread 59376] (Msg 1/1) BIP10112I: The resources from 'mqsicdc.par' have not been loaded because the runtime component 'ChangeDataCapture' has not been enabled. Reason: 'Restricted by Java Runtime selected'. Further detail: '/Applications/IBM App Connect Enterprise.app/Contents/mqsi/common/jdk/jre/embedded.java.yaml'. 
+2024-07-03 07:52:58.555244Z: [Thread 59376] (Msg 1/1) BIP9906I: Reading deployed resources. 
+2024-07-03 07:52:58.790308Z: [Thread 59508] (Msg 1/1) BIP2866I: IBM App Connect Enterprise administration security is inactive. 
+2024-07-03 07:52:58.810152Z: [Thread 59508] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
+2024-07-03 07:52:58.812916Z: [Thread 59376] (Msg 1/1) BIP1991I: Integration server has finished initialization. 
+2024-07-03 07:56:55.972120Z: [Thread 59404] (Msg 1/1) BIP2152I: Configuration message received. 
+2024-07-03 07:56:56.002792Z: [Thread 59404] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'ShoppingListAPI' of type 'RestAPI'. 
+2024-07-03 07:56:57.503056Z: [Thread 59404] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'ShoppingListAPI' of type 'RestAPI'. 
+2024-07-03 07:56:57.534012Z: [Thread 59404] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2024-07-03 07:56:57.534116Z: [Thread 59404] (Msg 1/1) BIP1996I: Listening on HTTP URL '/shoppinglistapi/v1*'. 
+2024-07-03 07:56:57.534752Z: [Thread 59404] (Msg 1/1) BIP2269I: Deployed resource 'gen.ShoppingListAPI' (uuid='gen.ShoppingListAPI',type='MessageFlow') started successfully. 
+2024-07-03 07:56:57.535284Z: [Thread 59404] (Msg 1/1) BIP9332I: RestAPI 'ShoppingListAPI' has been created successfully. 
+2024-07-03 07:56:57.535564Z: [Thread 59404] (Msg 1/1) BIP9326I: The source 'ShoppingListAPIproject.generated.bar' has been successfully deployed. 
+2024-07-03 07:56:57.537004Z: [Thread 59404] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/Users/rashmimac/IBM/ACET12/workspace4/GeneratedBarFiles/ShoppingListAPIproject.generated.bar" deployTimestamp="2024-07-03 07:56:55">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="postShoppinglist" type="subflow" deployBarfile="/Users/rashmimac/IBM/ACET12/workspace4/GeneratedBarFiles/ShoppingListAPIproject.generated.bar" deployTimestamp="2024-07-03 07:56:55">
+    <ConfigurableProperty uri="postShoppinglist#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="postShoppinglist#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="postShoppinglist#Compute.validateMaster">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="getShoppinglist" type="subflow" deployBarfile="/Users/rashmimac/IBM/ACET12/workspace4/GeneratedBarFiles/ShoppingListAPIproject.generated.bar" deployTimestamp="2024-07-03 07:56:55">
+    <ConfigurableProperty uri="getShoppinglist#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="getShoppinglist#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="getShoppinglist#Compute.validateMaster">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="gen.ShoppingListAPI" deployBarfile="/Users/rashmimac/IBM/ACET12/workspace4/GeneratedBarFiles/ShoppingListAPIproject.generated.bar" deployTimestamp="2024-07-03 07:56:55">
+    <ConfigurableProperty uri="gen.ShoppingListAPI#HTTP Input.URLSpecifier" override="/shoppinglistapi/v1*">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#HTTP Input.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#HTTP Input.faultFormat" override="JSON">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#HTTP Input.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#HTTP Input.timeoutForClient">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#HTTP Input.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#HTTP Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#HTTP Reply.compressionType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#HTTP Reply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#additionalInstances" override="3">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="gen.ShoppingListAPI#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="postItem" type="subflow" deployBarfile="/Users/rashmimac/IBM/ACET12/workspace4/GeneratedBarFiles/ShoppingListAPIproject.generated.bar" deployTimestamp="2024-07-03 07:56:55">
+    <ConfigurableProperty uri="postItem#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="postItem#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="postItem#Compute.validateMaster">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="putItem" type="subflow" deployBarfile="/Users/rashmimac/IBM/ACET12/workspace4/GeneratedBarFiles/ShoppingListAPIproject.generated.bar" deployTimestamp="2024-07-03 07:56:55">
+    <ConfigurableProperty uri="putItem#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="putItem#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="putItem#Compute.validateMaster">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="deleteItem" type="subflow" deployBarfile="/Users/rashmimac/IBM/ACET12/workspace4/GeneratedBarFiles/ShoppingListAPIproject.generated.bar" deployTimestamp="2024-07-03 07:56:55">
+    <ConfigurableProperty uri="deleteItem#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="deleteItem#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="deleteItem#Compute.validateMaster">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

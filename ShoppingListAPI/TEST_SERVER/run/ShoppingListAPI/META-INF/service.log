@@ -1,0 +1,30 @@
+
+==============================================
+
+!Wed Jul 03 13:26:55 IST 2024
+
+Successfully added file ShoppingListAPI/gen/ShoppingListAPI.msgflow to BAR file.
+
+Successfully added file ShoppingListAPI/ShoppingListAPI.json to BAR file.
+
+Successfully added file ShoppingListAPI/ShoppingListAPI.json to BAR file.
+
+Successfully added file ShoppingListAPI/Utils/Compute.esql to BAR file.
+
+Successfully added file ShoppingListAPI/deleteItem.subflow to BAR file.
+
+Successfully added file ShoppingListAPI/getShoppinglist.subflow to BAR file.
+
+Successfully added file ShoppingListAPI/postItem.subflow to BAR file.
+
+Successfully added file ShoppingListAPI/postShoppinglist.subflow to BAR file.
+
+Successfully added file ShoppingListAPI/putItem.subflow to BAR file.
+
+Successfully added file ShoppingListAPI/restapi.descriptor to BAR file.
+
+Successfully added file ShoppingListAPI/restapi.descriptor to BAR file.
+
+Successfully added file ShoppingListAPI/restapi.descriptor to BAR file.
+
+Successfully added file ShoppingListAPI/restapi.descriptor to BAR file.

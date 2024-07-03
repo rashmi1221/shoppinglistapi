@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="false" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1621958406000" workspaceResource="/ShoppingListAPI/ShoppingListAPI.json">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ShoppingListAPI/ShoppingListAPI.json.&#xA;Successfully added file ShoppingListAPI/ShoppingListAPI.json to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file ShoppingListAPI/ShoppingListAPI.json to BAR file.&#xA;" severity="0"/>
+      <barEntry name="ShoppingListAPI.json"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1621958406000" workspaceResource="/ShoppingListAPI/Utils/Compute.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ShoppingListAPI/Utils/Compute.esql.&#xA;Successfully added file ShoppingListAPI/Utils/Compute.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="Utils/Compute.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1621958406000" workspaceResource="/ShoppingListAPI/deleteItem.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ShoppingListAPI/deleteItem.subflow.&#xA;Successfully added file ShoppingListAPI/deleteItem.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="deleteItem.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1719992212000" workspaceResource="/ShoppingListAPI/gen/ShoppingListAPI.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ShoppingListAPI/gen/ShoppingListAPI.msgflow.&#xA;Successfully added file ShoppingListAPI/gen/ShoppingListAPI.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="gen/ShoppingListAPI.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1621958406000" workspaceResource="/ShoppingListAPI/getShoppinglist.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ShoppingListAPI/getShoppinglist.subflow.&#xA;Successfully added file ShoppingListAPI/getShoppinglist.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="getShoppinglist.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1719993415000" workspaceResource="/ShoppingListAPI/postItem.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ShoppingListAPI/postItem.subflow.&#xA;Successfully added file ShoppingListAPI/postItem.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="postItem.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1621958406000" workspaceResource="/ShoppingListAPI/postShoppinglist.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ShoppingListAPI/postShoppinglist.subflow.&#xA;Successfully added file ShoppingListAPI/postShoppinglist.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="postShoppinglist.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1621958406000" workspaceResource="/ShoppingListAPI/putItem.subflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ShoppingListAPI/putItem.subflow.&#xA;Successfully added file ShoppingListAPI/putItem.subflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="putItem.subflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1719992212000" workspaceResource="/ShoppingListAPI/restapi.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file ShoppingListAPI/restapi.descriptor.&#xA;Successfully added file ShoppingListAPI/restapi.descriptor to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file ShoppingListAPI/restapi.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="restapi.descriptor"/>
+    </deployable>
+  </deployables>
+</deploy:Deploy>

@@ -1,0 +1,184 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "ShoppingListAPI",
+    "version": "1.0.0",
+    "description": "ShoppingListAPI"
+  },
+  "servers": [
+    {
+      "url": "/shoppinglistapi/v1"
+    }
+  ],
+  "paths": {
+    "/shoppinglist": {
+      "get": {
+        "summary": "Get shopping list",
+        "operationId": "getShoppinglist",      
+        "parameters": [
+          {
+            "name": "Limit",
+            "in": "query",
+            "schema": {
+              "$ref": "#/components/schemas/Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A paged array of shopping list entries",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Items"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Add an item to the list",
+        "operationId": "postItem",      
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Item"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Null response"
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/shoppinglist/{item}": {
+      "put": {
+        "summary": "Update a specific item",
+        "operationId": "putItem",        
+        "parameters": [
+          {
+            "name": "item",
+            "in": "path",
+            "required": true,
+            "description": "The name of the item",
+            "schema": {
+              "$ref": "#/components/schemas/ItemName"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Item"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Null response"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a specific item",
+        "operationId": "deleteItem",
+        "parameters": [
+          {
+            "name": "item",
+            "in": "path",
+            "required": true,
+            "description": "The name of the item",
+            "schema": {
+              "$ref": "#/components/schemas/ItemName"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Deleted"
+          },
+          "404": {
+            "description": "Item not found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Item": {
+        "type": "object",
+        "required": [
+          "name",
+          "department",
+          "description"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "department": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "Items": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/Item"
+        }
+      },
+      "Error": {
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "type": "integer"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "Limit": {
+        "type": "integer"
+      },
+      "ItemName": {
+        "type": "string"
+      }
+    }
+  }
+}
